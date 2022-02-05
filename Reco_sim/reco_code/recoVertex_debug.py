@@ -23,12 +23,12 @@ import deDisperse_util as util
 warnings.filterwarnings("ignore")
 
 #add headers from AraSim. Not sure if all of them are needed, and I'm lazy to check that. MAK SURE to change the location of the headers
-gInterpreter.ProcessLine('#include "/users/PAS0654/osu8354/AraSim/Position.h"')
-gInterpreter.ProcessLine('#include "/users/PAS0654/osu8354/AraSim/Report.h"')
-gInterpreter.ProcessLine('#include "/users/PAS0654/osu8354/AraSim/Detector.h"')
-gInterpreter.ProcessLine('#include "/users/PAS0654/osu8354/AraSim/Settings.h"')
+gInterpreter.ProcessLine('#include "/cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/AraSim/Position.h"')
+gInterpreter.ProcessLine('#include "/cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/AraSim/Report.h"')
+gInterpreter.ProcessLine('#include "/cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/AraSim/Detector.h"')
+gInterpreter.ProcessLine('#include "/cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/AraSim/Settings.h"')
 
-gSystem.Load('/users/PAS0654/osu8354/AraSim/libAra.so') #load the simulation event library. You might get an error asking for the eventSim dictionry. To solve that, go to where you compiled AraSim, find that file, and copy it to where you set LD_LIBRARY_PATH.
+gSystem.Load('/cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/AraSim/libAra.so') #load the simulation event library. You might get an error asking for the eventSim dictionry. To solve that, go to where you compiled AraSim, find that file, and copy it to where you set LD_LIBRARY_PATH.
 
 
 # test = ROOT.TFile.Open("/fs/scratch/PAS0654/jorge/sim_results/CenA_atzero/AraOut.CenA_fixed_source_seed4.txt.run0.root")#directory where the simulation files are
@@ -165,7 +165,7 @@ for i in range(0,totalEvents):#loop over events
             plt.grid(which="both")
             axs[ch].set_ylim(-1000,1000)
         plt.tight_layout()
-        plt.savefig("/users/PAS0654/osu8354/ARA_cvmfs/source/AraRoot/analysis/thesis_work_daily/plots/Dumpster/wf_all_simple_ev%i.png"%i, dpi=100)
+        plt.savefig("/cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/ARA_cvmfs/source/AraRoot/analysis/thesis_work_daily/plots/Dumpster/wf_all_simple_ev%i.png"%i, dpi=100)
         
         ### FFT
         fig, axs = plt.subplots(4, 4, figsize = (12,10))
@@ -186,7 +186,7 @@ for i in range(0,totalEvents):#loop over events
             axs[ch].set_yscale('log')
             axs[ch].set_xlim(0,1000)
         plt.tight_layout()
-        plt.savefig("/users/PAS0654/osu8354/ARA_cvmfs/source/AraRoot/analysis/thesis_work_daily/plots/Dumpster/fft_all_simple_ev%i.png"%i, dpi=100)
+        plt.savefig("/cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/ARA_cvmfs/source/AraRoot/analysis/thesis_work_daily/plots/Dumpster/fft_all_simple_ev%i.png"%i, dpi=100)
         
         gr.clear()  # Added in Python 3.3
         del gr[:]

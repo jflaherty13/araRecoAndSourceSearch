@@ -6,10 +6,10 @@ declare -a arr=("17.0" "18.0" "19.0" "20.0")
 
 for i in "${arr[@]}"
 do
-    AraSimDir='/users/PAS0654/osu8354/ARA/AraSim/AraSim_versions/ARA03_type_2'
-    SetUpFile='/users/PAS0654/osu8354/ARA/AraSim/AraSim_versions/setups/monoE/A3_c2_E'$i'.txt'
-    #SetUpFile='/users/PAS0654/osu8354/ARA/AraSim/trunk/setup_'$i'_th_stdnoise.txt'
-    #OutputDir='/users/PAS0654/osu8354/ARA/AraSim/trunk/outputs/'
+    AraSimDir='/cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/ARA/AraSim/AraSim_versions/ARA03_type_2'
+    SetUpFile='/cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/ARA/AraSim/AraSim_versions/setups/monoE/A3_c2_E'$i'.txt'
+    #SetUpFile='/cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/ARA/AraSim/trunk/setup_'$i'_th_stdnoise.txt'
+    #OutputDir='/cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/ARA/AraSim/trunk/outputs/'
     OutputDir='/fs/scratch/PAS0654/jorge/sim_results/A3_c2/'
     export AraSimDir
     export SetUpFile

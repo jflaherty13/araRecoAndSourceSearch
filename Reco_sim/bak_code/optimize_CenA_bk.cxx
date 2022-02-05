@@ -73,7 +73,7 @@ int main(int argc, char **argv)
 	bool version2=true;
 	gRandom = new TRandom3();
 	char filename[50];
-	sprintf(filenameVertex, "./users/PAS0654/osu8354/ARA_cvmfs/source/AraRoot/analysis/files/source_optimization/bkg_random_SNR_%0.3f.csv", sol_Name[ray_sol_cnt]);
+	sprintf(filenameVertex, "./cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/ARA_cvmfs/source/AraRoot/analysis/files/source_optimization/bkg_random_SNR_%0.3f.csv", sol_Name[ray_sol_cnt]);
 	FILE *fout_wf = fopen(filenameVertex, "a+");//open file
 	fprintf(fout_wf, "time,voltage\n");
 	for(int loopNum = 0; loopNum<5; loopNum++){

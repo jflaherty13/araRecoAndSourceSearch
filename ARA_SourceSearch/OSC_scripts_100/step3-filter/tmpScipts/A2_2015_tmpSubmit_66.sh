@@ -4,7 +4,7 @@
 #SBATCH --time=15:10:00
 
 eval 'source /users/PCON0003/cond0068/.bash_profile_pitzer_cvmfs'
-cd /users/PAS0654/osu8354/ARA_cvmfs/source/AraRoot/analysis/
+cd /cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/ARA_cvmfs/source/AraRoot/analysis/
 
 ./v2_analysis_filter ${ISSIM} ${STATION} ${YEAR} ${SUMMARYDIR} ${OUTDIR} /fs/project/PAS0654/ARA_DATA/A23/100pct/RawData/A2/2015/0411/run005406/event005406.root /fs/project/PAS0654/ARA_DATA/A23/peds/A2/2015/pedestalValues.run005403.dat &
 ./v2_analysis_filter ${ISSIM} ${STATION} ${YEAR} ${SUMMARYDIR} ${OUTDIR} /fs/project/PAS0654/ARA_DATA/A23/100pct/RawData/A2/2015/0412/run005407/event005407.root /fs/project/PAS0654/ARA_DATA/A23/peds/A2/2015/pedestalValues.run005403.dat &

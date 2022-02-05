@@ -21,18 +21,18 @@ import scipy
 import pyrex
 
 #add headers from AraSim. Not sure if all of them are needed, and I'm lazy to check that. MAK SURE to change the location of the headers
-gInterpreter.ProcessLine('#include "/users/PAS0654/osu8354/AraSim/Position.h"')
-gInterpreter.ProcessLine('#include "/users/PAS0654/osu8354/AraSim/Report.h"')
-gInterpreter.ProcessLine('#include "/users/PAS0654/osu8354/AraSim/Detector.h"')
-gInterpreter.ProcessLine('#include "/users/PAS0654/osu8354/AraSim/Settings.h"')
-# gInterpreter.ProcessLine('#include "/users/PAS0654/osu8354/AraSim/IceModel.h"')
+gInterpreter.ProcessLine('#include "/cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/AraSim/Position.h"')
+gInterpreter.ProcessLine('#include "/cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/AraSim/Report.h"')
+gInterpreter.ProcessLine('#include "/cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/AraSim/Detector.h"')
+gInterpreter.ProcessLine('#include "/cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/AraSim/Settings.h"')
+# gInterpreter.ProcessLine('#include "/cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/AraSim/IceModel.h"')
 
 
 
-gSystem.Load('/users/PAS0654/osu8354/AraSim/libAra.so') #load the simulation event library. You might get an error asking for the eventSim dictionry. To solve that, go to where you compiled AraSim, find that file, and copy it to where you set LD_LIBRARY_PATH.
+gSystem.Load('/cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/AraSim/libAra.so') #load the simulation event library. You might get an error asking for the eventSim dictionry. To solve that, go to where you compiled AraSim, find that file, and copy it to where you set LD_LIBRARY_PATH.
 
 file_list=[]#Define an empty list
-file_list.append("/users/PAS0654/osu8354/AraSim/outputs/AraOut.default_A2_c1_E610_readIn.txt.runAraSim_comparison_input_test_1E19_2.txt.root")
+file_list.append("/cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/AraSim/outputs/AraOut.default_A2_c1_E610_readIn.txt.runAraSim_comparison_input_test_1E19_2.txt.root")
 
 simSettingsTree = TChain("AraTree")
 eventTree = TChain("eventTree") #Define chain and tree that needs to be read. "VTree" in this case.

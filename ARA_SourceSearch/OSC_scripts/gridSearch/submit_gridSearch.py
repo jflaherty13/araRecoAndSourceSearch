@@ -7,7 +7,7 @@ pol = 1
 energy = 255
 # file = "/fs/project/PAS0654/ARA_DATA/A23/10pct_redo/ValsForCuts/A2/c1/cutvals_drop_FiltSurface_snrbins_0_0_wfrmsvals_-1.3_-1.4_run_*.root"
 # file = "/fs/project/PAS0654/ARA_DATA/A23/10pctCalibBugFix/ValsForCuts/A2/c2/cutvals_drop_FiltSurface_CWThresh2.0_snrbins_0_1_wfrmsvals_0.0_0.0_run_*"
-outDir = "/users/PAS0654/osu8354/ARA_cvmfs/source/AraRoot/analysis/ARA_analysis/ARA_SourceSearch/results/gridSearch/A2/all/"
+outDir = "/cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/ARA_cvmfs/source/AraRoot/analysis/ARA_analysis/ARA_SourceSearch/results/gridSearch/A2/all/"
 # slope = -2000
 for pol in range(0,2):
     for slope in range(-2500,-500,10):

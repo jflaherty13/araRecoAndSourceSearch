@@ -6,6 +6,6 @@
 
 eval 'source /users/PCON0003/cond0068/.bash_profile_pitzer_cvmfs'
 
-cd /users/PAS0654/osu8354/ARA_cvmfs/source/AraRoot/analysis/
+cd /cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/ARA_cvmfs/source/AraRoot/analysis/
 
 ./v2_analysis_run_summary ${ISSIM} ${STATION} ${OUTDIR} ${DATA} ${PEDESTAL}

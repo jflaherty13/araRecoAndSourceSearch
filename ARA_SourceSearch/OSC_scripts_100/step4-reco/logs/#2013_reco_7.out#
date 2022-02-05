@@ -1498,7 +1498,7 @@ No string/antenna matches the channel number
 No string/antenna matches the channel number
 Number of antennas included in position average: 16 : 16
 ******** Setting up Arrival Times - Ray Trace: Started ********
-/users/PAS0654/osu8354/ARA_cvmfs/build/RayTraceArray/ArrivalTimes.RayTrace.Station.2.ice.10.crust.0.moore.0.Angle.1.rad.300.test.4.solnum.0.root
+/cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/ARA_cvmfs/build/RayTraceArray/ArrivalTimes.RayTrace.Station.2.ice.10.crust.0.moore.0.Angle.1.rad.300.test.4.solnum.0.root
 0
 20
 Number of antennas for station, polarization: 3, 0 :: 8
@@ -1682,7 +1682,7 @@ No string/antenna matches the channel number
 No string/antenna matches the channel number
 Number of antennas included in position average: 16 : 16
 ******** Setting up Arrival Times - Ray Trace: Started ********
-/users/PAS0654/osu8354/ARA_cvmfs/build/RayTraceArray/ArrivalTimes.RayTrace.Station.2.ice.10.crust.0.moore.0.Angle.1.rad.300.test.4.solnum.0.root
+/cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/ARA_cvmfs/build/RayTraceArray/ArrivalTimes.RayTrace.Station.2.ice.10.crust.0.moore.0.Angle.1.rad.300.test.4.solnum.0.root
 Settings1-nofz: 1
 Radius = 300
 Number of Stations = 4
@@ -1872,7 +1872,7 @@ Filled angular array
 ******** Setting up DeltaTInfinity: Started ********
 ******** Setting up fArrivalTimes: Finished ********
 ******** Setting up Arrival Times - Ray Trace: Started ********
-/users/PAS0654/osu8354/ARA_cvmfs/build/RayTraceArray/ArrivalTimes.RayTrace.Station.2.ice.10.crust.0.moore.0.Angle.1.rad.300.test.4.solnum.1.root
+/cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/ARA_cvmfs/build/RayTraceArray/ArrivalTimes.RayTrace.Station.2.ice.10.crust.0.moore.0.Angle.1.rad.300.test.4.solnum.1.root
 0
 ******** Setting up DeltaTInfinity: Finished ********
 Set up DeltaTInfinity
@@ -1910,11 +1910,11 @@ No string/antenna matches the channel number
 No string/antenna matches the channel number
 Number of antennas included in position average: 16 : 16
 ******** Setting up Arrival Times - Ray Trace: Started ********
-/users/PAS0654/osu8354/ARA_cvmfs/build/RayTraceArray/ArrivalTimes.RayTrace.Station.2.ice.10.crust.0.moore.0.Angle.1.rad.300.test.4.solnum.0.root
+/cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/ARA_cvmfs/build/RayTraceArray/ArrivalTimes.RayTrace.Station.2.ice.10.crust.0.moore.0.Angle.1.rad.300.test.4.solnum.0.root
 0
 ******** Setting up fArrivalTimes: Finished ********
 ******** Setting up Arrival Times - Ray Trace: Started ********
-/users/PAS0654/osu8354/ARA_cvmfs/build/RayTraceArray/ArrivalTimes.RayTrace.Station.2.ice.10.crust.0.moore.0.Angle.1.rad.300.test.4.solnum.1.root
+/cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/ARA_cvmfs/build/RayTraceArray/ArrivalTimes.RayTrace.Station.2.ice.10.crust.0.moore.0.Angle.1.rad.300.test.4.solnum.1.root
 0
 ******** Setting up fArrivalTimes: Finished ********
 Set up DeltaTRayTrace
@@ -1956,7 +1956,7 @@ No string/antenna matches the channel number
 No string/antenna matches the channel number
 Number of antennas included in position average: 16 : 16
 ******** Setting up Arrival Times - Ray Trace: Started ********
-/users/PAS0654/osu8354/ARA_cvmfs/build/RayTraceArray/ArrivalTimes.RayTrace.Station.2.ice.10.crust.0.moore.0.Angle.1.rad.300.test.4.solnum.0.root
+/cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/ARA_cvmfs/build/RayTraceArray/ArrivalTimes.RayTrace.Station.2.ice.10.crust.0.moore.0.Angle.1.rad.300.test.4.solnum.0.root
 0
 ******** Setting up DeltaTInfinity: Finished ********
 Set up DeltaTInfinity
@@ -1994,7 +1994,7 @@ No string/antenna matches the channel number
 No string/antenna matches the channel number
 Number of antennas included in position average: 16 : 16
 ******** Setting up Arrival Times - Ray Trace: Started ********
-/users/PAS0654/osu8354/ARA_cvmfs/build/RayTraceArray/ArrivalTimes.RayTrace.Station.2.ice.10.crust.0.moore.0.Angle.1.rad.300.test.4.solnum.0.root
+/cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/ARA_cvmfs/build/RayTraceArray/ArrivalTimes.RayTrace.Station.2.ice.10.crust.0.moore.0.Angle.1.rad.300.test.4.solnum.0.root
 0
 ******** Setting up DeltaTInfinity: Finished ********
 Set up DeltaTInfinity
@@ -2032,7 +2032,7 @@ No string/antenna matches the channel number
 No string/antenna matches the channel number
 Number of antennas included in position average: 16 : 16
 ******** Setting up Arrival Times - Ray Trace: Started ********
-/users/PAS0654/osu8354/ARA_cvmfs/build/RayTraceArray/ArrivalTimes.RayTrace.Station.2.ice.10.crust.0.moore.0.Angle.1.rad.300.test.4.solnum.0.root
+/cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/ARA_cvmfs/build/RayTraceArray/ArrivalTimes.RayTrace.Station.2.ice.10.crust.0.moore.0.Angle.1.rad.300.test.4.solnum.0.root
 0
 ******** Setting up fArrivalTimes: Finished ********
 Set up DeltaTRayTrace
@@ -2040,15 +2040,15 @@ Set up DeltaTRayTrace_CosTheta
 Destruct class Detector
 ******** Setting up fArrivalTimes: Finished ********
 ******** Setting up Arrival Times - Ray Trace: Started ********
-/users/PAS0654/osu8354/ARA_cvmfs/build/RayTraceArray/ArrivalTimes.RayTrace.Station.2.ice.10.crust.0.moore.0.Angle.1.rad.300.test.4.solnum.1.root
+/cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/ARA_cvmfs/build/RayTraceArray/ArrivalTimes.RayTrace.Station.2.ice.10.crust.0.moore.0.Angle.1.rad.300.test.4.solnum.1.root
 0
 ******** Setting up fArrivalTimes: Finished ********
 ******** Setting up Arrival Times - Ray Trace: Started ********
-/users/PAS0654/osu8354/ARA_cvmfs/build/RayTraceArray/ArrivalTimes.RayTrace.Station.2.ice.10.crust.0.moore.0.Angle.1.rad.300.test.4.solnum.1.root
+/cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/ARA_cvmfs/build/RayTraceArray/ArrivalTimes.RayTrace.Station.2.ice.10.crust.0.moore.0.Angle.1.rad.300.test.4.solnum.1.root
 0
 ******** Setting up fArrivalTimes: Finished ********
 ******** Setting up Arrival Times - Ray Trace: Started ********
-/users/PAS0654/osu8354/ARA_cvmfs/build/RayTraceArray/ArrivalTimes.RayTrace.Station.2.ice.10.crust.0.moore.0.Angle.1.rad.300.test.4.solnum.1.root
+/cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/ARA_cvmfs/build/RayTraceArray/ArrivalTimes.RayTrace.Station.2.ice.10.crust.0.moore.0.Angle.1.rad.300.test.4.solnum.1.root
 0
 ******** Setting up fArrivalTimes: Finished ********
 Set up DeltaTRayTrace
@@ -2061,7 +2061,7 @@ Successfully found filter file information
 Run 1503 has a starEvery of 557 and 44591 total events
 ******** Setting up fArrivalTimes: Finished ********
 ******** Setting up Arrival Times - Ray Trace: Started ********
-/users/PAS0654/osu8354/ARA_cvmfs/build/RayTraceArray/ArrivalTimes.RayTrace.Station.2.ice.10.crust.0.moore.0.Angle.1.rad.300.test.4.solnum.1.root
+/cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/ARA_cvmfs/build/RayTraceArray/ArrivalTimes.RayTrace.Station.2.ice.10.crust.0.moore.0.Angle.1.rad.300.test.4.solnum.1.root
 0
 ******** Setting up fArrivalTimes: Finished ********
 Set up DeltaTRayTrace
@@ -2100,10 +2100,10 @@ Reco Run Number 1505
 loadAtriPedestals : Loading fAtriPedFile - /fs/project/PAS0654/ARA_DATA/A23/peds/run_specific_peds/A2/all_peds/event1505_specificPeds.dat
 Successfully found filter file information 
 Run 1505 has a starEvery of 563 and 45096 total events
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  *AraEventCalibrator::loadAtriCalib(): INFO - Vadj reference file = /users/PAS0654/osu8354/ARA_cvmfs/build/share/araCalib/ATRI/araAtriStation2VadjRef.txt
-AraEventCalibrator::loadAtriCalib(): INFO - Calibration file = /users/PAS0654/osu8354/ARA_cvmfs/build/share/araCalib/ATRI/araAtriStation2SampleTimingNew.txt
-AraEventCalibrator::loadAtriCalib(): INFO - Voltage-calibration file = /users/PAS0654/osu8354/ARA_cvmfs/build/share/araCalib/ATRI/araAtriStation2adcToVoltsConv.txt
-AraEventCalibrator::loadAtriCalib(): INFO - high voltage-calibration file = /users/PAS0654/osu8354/ARA_cvmfs/build/share/araCalib/ATRI/araAtriStation2highAdcToVoltsConv.txt
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  *AraEventCalibrator::loadAtriCalib(): INFO - Vadj reference file = /cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/ARA_cvmfs/build/share/araCalib/ATRI/araAtriStation2VadjRef.txt
+AraEventCalibrator::loadAtriCalib(): INFO - Calibration file = /cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/ARA_cvmfs/build/share/araCalib/ATRI/araAtriStation2SampleTimingNew.txt
+AraEventCalibrator::loadAtriCalib(): INFO - Voltage-calibration file = /cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/ARA_cvmfs/build/share/araCalib/ATRI/araAtriStation2adcToVoltsConv.txt
+AraEventCalibrator::loadAtriCalib(): INFO - high voltage-calibration file = /cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/ARA_cvmfs/build/share/araCalib/ATRI/araAtriStation2highAdcToVoltsConv.txt
 ********************************************************************************
 Done! Run Number 1499 
 slurmstepd: error: *** JOB 3730969 ON p0090 CANCELLED AT 2021-04-06T16:42:46 DUE TO TIME LIMIT ***

@@ -84,13 +84,13 @@ Thread 1 (Thread 0x2af43c04e4c0 (LWP 174423)):
 #0  0x00002af43c7164a9 in waitpid () from /lib64/libc.so.6
 #1  0x00002af43c693f52 in do_system () from /lib64/libc.so.6
 #2  0x00002af43c694301 in system () from /lib64/libc.so.6
-#3  0x00002af445de5014 in TUnixSystem::StackTrace (this=0x55780a69b620) at /users/PAS0654/osu8354/root-6.18.04/core/unix/src/TUnixSystem.cxx:2400
-#4  0x00002af445de774c in TUnixSystem::DispatchSignals (this=0x55780a69b620, sig=kSigSegmentationViolation) at /users/PAS0654/osu8354/root-6.18.04/core/unix/src/TUnixSystem.cxx:3631
+#3  0x00002af445de5014 in TUnixSystem::StackTrace (this=0x55780a69b620) at /cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/root-6.18.04/core/unix/src/TUnixSystem.cxx:2400
+#4  0x00002af445de774c in TUnixSystem::DispatchSignals (this=0x55780a69b620, sig=kSigSegmentationViolation) at /cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/root-6.18.04/core/unix/src/TUnixSystem.cxx:3631
 #5  <signal handler called>
-#6  0x00002af47b1dee40 in std::vector<AraAntennaInfo, std::allocator<AraAntennaInfo> >::size() const () from /users/PAS0654/osu8354/ARA_cvmfs/build/lib/libAraEvent.so
-#7  0x00002af47b1dbfa4 in AraStationInfo::getElecChanFromRFChan(int) () from /users/PAS0654/osu8354/ARA_cvmfs/build/lib/libAraEvent.so
-#8  0x00002af47b1cd3a8 in AraGeomTool::getElecChanFromRFChan(int, unsigned char) () from /users/PAS0654/osu8354/ARA_cvmfs/build/lib/libAraEvent.so
-#9  0x00002af47b1e8519 in UsefulAtriStationEvent::getGraphFromRFChan(int) () from /users/PAS0654/osu8354/ARA_cvmfs/build/lib/libAraEvent.so
+#6  0x00002af47b1dee40 in std::vector<AraAntennaInfo, std::allocator<AraAntennaInfo> >::size() const () from /cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/ARA_cvmfs/build/lib/libAraEvent.so
+#7  0x00002af47b1dbfa4 in AraStationInfo::getElecChanFromRFChan(int) () from /cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/ARA_cvmfs/build/lib/libAraEvent.so
+#8  0x00002af47b1cd3a8 in AraGeomTool::getElecChanFromRFChan(int, unsigned char) () from /cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/ARA_cvmfs/build/lib/libAraEvent.so
+#9  0x00002af47b1e8519 in UsefulAtriStationEvent::getGraphFromRFChan(int) () from /cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/ARA_cvmfs/build/lib/libAraEvent.so
 #10 0x00002af4466d3045 in ?? ()
 #11 0x0000000000000000 in ?? ()
 ===========================================================
@@ -103,10 +103,10 @@ report at http://root.cern.ch/bugs Please post the ENTIRE stack trace
 from above as an attachment in addition to anything else
 that might help us fixing this issue.
 ===========================================================
-#6  0x00002af47b1dee40 in std::vector<AraAntennaInfo, std::allocator<AraAntennaInfo> >::size() const () from /users/PAS0654/osu8354/ARA_cvmfs/build/lib/libAraEvent.so
-#7  0x00002af47b1dbfa4 in AraStationInfo::getElecChanFromRFChan(int) () from /users/PAS0654/osu8354/ARA_cvmfs/build/lib/libAraEvent.so
-#8  0x00002af47b1cd3a8 in AraGeomTool::getElecChanFromRFChan(int, unsigned char) () from /users/PAS0654/osu8354/ARA_cvmfs/build/lib/libAraEvent.so
-#9  0x00002af47b1e8519 in UsefulAtriStationEvent::getGraphFromRFChan(int) () from /users/PAS0654/osu8354/ARA_cvmfs/build/lib/libAraEvent.so
+#6  0x00002af47b1dee40 in std::vector<AraAntennaInfo, std::allocator<AraAntennaInfo> >::size() const () from /cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/ARA_cvmfs/build/lib/libAraEvent.so
+#7  0x00002af47b1dbfa4 in AraStationInfo::getElecChanFromRFChan(int) () from /cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/ARA_cvmfs/build/lib/libAraEvent.so
+#8  0x00002af47b1cd3a8 in AraGeomTool::getElecChanFromRFChan(int, unsigned char) () from /cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/ARA_cvmfs/build/lib/libAraEvent.so
+#9  0x00002af47b1e8519 in UsefulAtriStationEvent::getGraphFromRFChan(int) () from /cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/ARA_cvmfs/build/lib/libAraEvent.so
 #10 0x00002af4466d3045 in ?? ()
 #11 0x0000000000000000 in ?? ()
 ===========================================================

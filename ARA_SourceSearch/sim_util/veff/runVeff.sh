@@ -6,7 +6,7 @@
 #SBATCH --time=01:30:00
 eval 'source /users/PCON0003/cond0068/.bash_profile_pitzer_cvmfs'
 
-cd /users/PAS0654/osu8354/AraSim
+cd /cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/AraSim
 
 FILES=${SIMDIR}/*.root
 

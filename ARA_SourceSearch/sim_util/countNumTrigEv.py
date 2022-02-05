@@ -16,16 +16,16 @@ from ROOT import TChain, TSelector, TTree
 # import scipy
 
 #add headers from AraSim. Not sure if all of them are needed, and I'm lazy to check that. MAK SURE to change the location of the headers
-gInterpreter.ProcessLine('#include "/users/PAS0654/osu8354/AraSim/Position.h"')
-gInterpreter.ProcessLine('#include "/users/PAS0654/osu8354/AraSim/Report.h"')
-gInterpreter.ProcessLine('#include "/users/PAS0654/osu8354/AraSim/Detector.h"')
-gInterpreter.ProcessLine('#include "/users/PAS0654/osu8354/AraSim/Settings.h"')
-# gInterpreter.ProcessLine('#include "/users/PAS0654/osu8354/AraSim/IceModel.h"')
+gInterpreter.ProcessLine('#include "/cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/AraSim/Position.h"')
+gInterpreter.ProcessLine('#include "/cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/AraSim/Report.h"')
+gInterpreter.ProcessLine('#include "/cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/AraSim/Detector.h"')
+gInterpreter.ProcessLine('#include "/cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/AraSim/Settings.h"')
+# gInterpreter.ProcessLine('#include "/cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/AraSim/IceModel.h"')
 
-gSystem.Load('/users/PAS0654/osu8354/AraSim/libAra.so') #load the simulation event library. You might get an error asking for the eventSim dictionry. To solve that, go to where you compiled AraSim, find that file, and copy it to where you set LD_LIBRARY_PATH.
+gSystem.Load('/cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/AraSim/libAra.so') #load the simulation event library. You might get an error asking for the eventSim dictionry. To solve that, go to where you compiled AraSim, find that file, and copy it to where you set LD_LIBRARY_PATH.
 
 file_list=[]#Define an empty list
-#file_list.append("/users/PAS0654/osu8354/AraSim/outputs/AraOut.setupExample.txt.run1.root")
+#file_list.append("/cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/AraSim/outputs/AraOut.setupExample.txt.run1.root")
 for filename in os.listdir("/fs/scratch/PAS0654/jorge/sim_results/CenAFluxFixed"):#Loop over desired directory
     if filename.endswith(".root"): #extension, .root in this case
         file_list.append(os.path.join("/fs/scratch/PAS0654/jorge/sim_results/CenAFluxFixed", str(filename))) #add file name to the list

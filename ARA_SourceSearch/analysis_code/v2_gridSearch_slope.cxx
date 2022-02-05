@@ -728,7 +728,7 @@ int main(int argc, char **argv)
 			}
 		}
     char title[300];
-		sprintf(title, "/users/PAS0654/osu8354/ARA_cvmfs/source/AraRoot/analysis/ARA_analysis/ARA_SourceSearch/results/gridSearch/A%i/c%i/result_%.1f.txt",station,config,abs(slope));
+		sprintf(title, "/cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/ARA_cvmfs/source/AraRoot/analysis/ARA_analysis/ARA_SourceSearch/results/gridSearch/A%i/c%i/result_%.1f.txt",station,config,abs(slope));
     FILE *fout = fopen(title, "w+");//open file
     fprintf(fout, "%f,%f",slope,max_SoverSup);
     fclose(fout);

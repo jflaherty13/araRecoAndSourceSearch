@@ -36,7 +36,7 @@ file_list=[]#Define an empty list
 # for filename in os.listdir("/fs/scratch/PAS0654/jorge/sim_results/Chiba_antModel_noiseless"):#Loop over desired directory
 #     if filename.startswith("AraOut.default_noiseless_A2_c1_E610.txt.run26."): #extension, .root in this case
 #         file_list.append(os.path.join("/fs/scratch/PAS0654/jorge/sim_results/Chiba_antModel_noiseless", str(filename))) #add file name to the list
-file_list.append("/users/PAS0654/osu8354/ARA_cvmfs/source/AraSim/outputs/AraOut.root")
+file_list.append("/cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/ARA_cvmfs/source/AraSim/outputs/AraOut.root")
 
 
 eventTree = TChain("eventTree") #Define chain and tree that needs to be read. "VTree" in this case.

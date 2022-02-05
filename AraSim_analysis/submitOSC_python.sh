@@ -10,10 +10,10 @@
 eval 'source /users/PCON0003/cond0068/.bash_profile_pitzer_cvmfs'
 module load python/3.6-conda5.2
 # export HDF5_USE_FILE_LOCKING=FALSE
-export XDG_RUNTIME_DIR=/users/PAS0654/osu8354/ARA_cvmfs/source/AraRoot/analysis/ARA_analysis/AraSim_analysis/
+export XDG_RUNTIME_DIR=/cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/ARA_cvmfs/source/AraRoot/analysis/ARA_analysis/AraSim_analysis/
 export RUNLEVEL=3
 export QT_QPA_PLATFORM='offscreen' #Need to add so my python job doesn't crash
-cd /users/PAS0654/osu8354/ARA_cvmfs/source/AraRoot/analysis/ARA_analysis/AraSim_analysis/
+cd /cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/ARA_cvmfs/source/AraRoot/analysis/ARA_analysis/AraSim_analysis/
 
 # Print the task and run range
 # echo This is task $SLURM_ARRAY_TASK_ID

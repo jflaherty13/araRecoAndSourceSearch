@@ -23,18 +23,18 @@ import warnings
 warnings.filterwarnings("ignore")
 
 #add headers from AraSim. Not sure if all of them are needed, and I'm lazy to check that. MAK SURE to change the location of the headers
-gInterpreter.ProcessLine('#include "/users/PAS0654/osu8354/AraSim/Position.h"')
-gInterpreter.ProcessLine('#include "/users/PAS0654/osu8354/AraSim/Report.h"')
-gInterpreter.ProcessLine('#include "/users/PAS0654/osu8354/AraSim/Detector.h"')
-gInterpreter.ProcessLine('#include "/users/PAS0654/osu8354/AraSim/Settings.h"')
-# gInterpreter.ProcessLine('#include "/users/PAS0654/osu8354/ARA_cvmfs/source/AraRoot/RayTraceCorrelator/RayTraceCorrelator.h"')
+gInterpreter.ProcessLine('#include "/cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/AraSim/Position.h"')
+gInterpreter.ProcessLine('#include "/cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/AraSim/Report.h"')
+gInterpreter.ProcessLine('#include "/cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/AraSim/Detector.h"')
+gInterpreter.ProcessLine('#include "/cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/AraSim/Settings.h"')
+# gInterpreter.ProcessLine('#include "/cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/ARA_cvmfs/source/AraRoot/RayTraceCorrelator/RayTraceCorrelator.h"')
 
-gInterpreter.AddIncludePath("/users/PAS0654/osu8354/ARA_cvmfs/build/include/");
+gInterpreter.AddIncludePath("/cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/ARA_cvmfs/build/include/");
 
-gInterpreter.AddIncludePath("/users/PAS0654/osu8354/ARA_cvmfs/source/AraRoot/RayTraceCorrelator/");
+gInterpreter.AddIncludePath("/cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/ARA_cvmfs/source/AraRoot/RayTraceCorrelator/");
 gInterpreter.ProcessLine('#include "RayTraceCorrelator.h"')
 
-gSystem.Load('/users/PAS0654/osu8354/AraSim/libAra.so') #load the simulation event library. You might get an error asking for the eventSim dictionry. To solve that, go to where you compiled AraSim, find that file, and copy it to where you set LD_LIBRARY_PATH.
+gSystem.Load('/cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/AraSim/libAra.so') #load the simulation event library. You might get an error asking for the eventSim dictionry. To solve that, go to where you compiled AraSim, find that file, and copy it to where you set LD_LIBRARY_PATH.
 gSystem.Load('libRayTraceCorrelator.so')
 
 file_list=[]#Define an empty list
@@ -68,7 +68,7 @@ eventPtr = ROOT.Event()
 iceModelPtr = ROOT.IceModel()
 Settings = ROOT.Settings()
 
-Settings.ReadFile("/users/PAS0654/osu8354/ARA_cvmfs/source/AraRoot/analysis/setup.txt")
+Settings.ReadFile("/cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/ARA_cvmfs/source/AraRoot/analysis/setup.txt")
 Settings.NOFZ=1;
 Corr = ROOT.RayTraceCorrelator(2, 300., Settings)
 

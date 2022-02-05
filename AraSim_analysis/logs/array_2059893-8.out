@@ -84,13 +84,13 @@ Thread 1 (Thread 0x2af0dcf164c0 (LWP 33154)):
 #0  0x00002af0dd5de4a9 in waitpid () from /lib64/libc.so.6
 #1  0x00002af0dd55bf52 in do_system () from /lib64/libc.so.6
 #2  0x00002af0dd55c301 in system () from /lib64/libc.so.6
-#3  0x00002af0e6cad014 in TUnixSystem::StackTrace (this=0x55e4d9f95620) at /users/PAS0654/osu8354/root-6.18.04/core/unix/src/TUnixSystem.cxx:2400
-#4  0x00002af0e6caf74c in TUnixSystem::DispatchSignals (this=0x55e4d9f95620, sig=kSigSegmentationViolation) at /users/PAS0654/osu8354/root-6.18.04/core/unix/src/TUnixSystem.cxx:3631
+#3  0x00002af0e6cad014 in TUnixSystem::StackTrace (this=0x55e4d9f95620) at /cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/root-6.18.04/core/unix/src/TUnixSystem.cxx:2400
+#4  0x00002af0e6caf74c in TUnixSystem::DispatchSignals (this=0x55e4d9f95620, sig=kSigSegmentationViolation) at /cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/root-6.18.04/core/unix/src/TUnixSystem.cxx:3631
 #5  <signal handler called>
-#6  0x00002af11c098e40 in std::vector<AraAntennaInfo, std::allocator<AraAntennaInfo> >::size() const () from /users/PAS0654/osu8354/ARA_cvmfs/build/lib/libAraEvent.so
-#7  0x00002af11c095fa4 in AraStationInfo::getElecChanFromRFChan(int) () from /users/PAS0654/osu8354/ARA_cvmfs/build/lib/libAraEvent.so
-#8  0x00002af11c0873a8 in AraGeomTool::getElecChanFromRFChan(int, unsigned char) () from /users/PAS0654/osu8354/ARA_cvmfs/build/lib/libAraEvent.so
-#9  0x00002af11c0a2519 in UsefulAtriStationEvent::getGraphFromRFChan(int) () from /users/PAS0654/osu8354/ARA_cvmfs/build/lib/libAraEvent.so
+#6  0x00002af11c098e40 in std::vector<AraAntennaInfo, std::allocator<AraAntennaInfo> >::size() const () from /cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/ARA_cvmfs/build/lib/libAraEvent.so
+#7  0x00002af11c095fa4 in AraStationInfo::getElecChanFromRFChan(int) () from /cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/ARA_cvmfs/build/lib/libAraEvent.so
+#8  0x00002af11c0873a8 in AraGeomTool::getElecChanFromRFChan(int, unsigned char) () from /cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/ARA_cvmfs/build/lib/libAraEvent.so
+#9  0x00002af11c0a2519 in UsefulAtriStationEvent::getGraphFromRFChan(int) () from /cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/ARA_cvmfs/build/lib/libAraEvent.so
 #10 0x00002af0e759b045 in ?? ()
 #11 0x0000000000000000 in ?? ()
 ===========================================================
@@ -103,10 +103,10 @@ report at http://root.cern.ch/bugs Please post the ENTIRE stack trace
 from above as an attachment in addition to anything else
 that might help us fixing this issue.
 ===========================================================
-#6  0x00002af11c098e40 in std::vector<AraAntennaInfo, std::allocator<AraAntennaInfo> >::size() const () from /users/PAS0654/osu8354/ARA_cvmfs/build/lib/libAraEvent.so
-#7  0x00002af11c095fa4 in AraStationInfo::getElecChanFromRFChan(int) () from /users/PAS0654/osu8354/ARA_cvmfs/build/lib/libAraEvent.so
-#8  0x00002af11c0873a8 in AraGeomTool::getElecChanFromRFChan(int, unsigned char) () from /users/PAS0654/osu8354/ARA_cvmfs/build/lib/libAraEvent.so
-#9  0x00002af11c0a2519 in UsefulAtriStationEvent::getGraphFromRFChan(int) () from /users/PAS0654/osu8354/ARA_cvmfs/build/lib/libAraEvent.so
+#6  0x00002af11c098e40 in std::vector<AraAntennaInfo, std::allocator<AraAntennaInfo> >::size() const () from /cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/ARA_cvmfs/build/lib/libAraEvent.so
+#7  0x00002af11c095fa4 in AraStationInfo::getElecChanFromRFChan(int) () from /cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/ARA_cvmfs/build/lib/libAraEvent.so
+#8  0x00002af11c0873a8 in AraGeomTool::getElecChanFromRFChan(int, unsigned char) () from /cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/ARA_cvmfs/build/lib/libAraEvent.so
+#9  0x00002af11c0a2519 in UsefulAtriStationEvent::getGraphFromRFChan(int) () from /cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/ARA_cvmfs/build/lib/libAraEvent.so
 #10 0x00002af0e759b045 in ?? ()
 #11 0x0000000000000000 in ?? ()
 ===========================================================

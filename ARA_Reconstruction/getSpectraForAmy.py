@@ -52,9 +52,9 @@ def calculatePower(t, v):
     power = np.sum(v**2)*dT
     return power
 
-gInterpreter.ProcessLine('#include "/users/PAS0654/osu8354/ARA_cvmfs/build/include/FFTtools.h"')
+gInterpreter.ProcessLine('#include "/cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/ARA_cvmfs/build/include/FFTtools.h"')
 gSystem.Load('libAraEvent.so') #load the simulation event library. You might get an error asking for the eventSim dictionry. To solve that, go to where you compiled AraSim, find that file, and copy it to where you set LD_LIBRARY_PATH.
-gSystem.Load("/users/PAS0654/osu8354/ARA_cvmfs/build/lib/libRootFftwWrapper.so")
+gSystem.Load("/cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/ARA_cvmfs/build/lib/libRootFftwWrapper.so")
 
 day = 24
 

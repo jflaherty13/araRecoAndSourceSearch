@@ -17,7 +17,7 @@ declare -a arr=("4.5" "5.3" "5.8")
 for i in "${arr[@]}"
 do
     rm hist_from_data_"$i".root 
-    #./readTree_highest $i /users/PAS0654/osu8354/ARA/AraSim/trunk/outputs/AraOut.setup_"$i"_th_stdnoise.txt.run* &
+    #./readTree_highest $i /cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/ARA/AraSim/trunk/outputs/AraOut.setup_"$i"_th_stdnoise.txt.run* &
     ./readTree_highest $i /fs/scratch/PAS0654/jorge/sim_results/AraOut.setup_"$i"_th.txt.run* &
 done
 wait

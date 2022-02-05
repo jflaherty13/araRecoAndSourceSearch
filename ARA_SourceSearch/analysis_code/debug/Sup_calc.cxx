@@ -34,7 +34,7 @@ int main(int argc, char **argv)
   double achieved_alpha;
   double back_estimate;
   char title[300];
-  sprintf(title, "/users/PAS0654/osu8354/ARA_cvmfs/source/AraRoot/analysis/ARA_analysis/ARA_SourceSearch/analysis_code/debug/Sup.txt");
+  sprintf(title, "/cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/ARA_cvmfs/source/AraRoot/analysis/ARA_analysis/ARA_SourceSearch/analysis_code/debug/Sup.txt");
   FILE *fout = fopen(title, "w+");//open file
   fprintf(fout,"bkg,Sup_normal,Sup_TMath\n");
   for(back_estimate=0.00001;back_estimate<2;back_estimate+=0.001){

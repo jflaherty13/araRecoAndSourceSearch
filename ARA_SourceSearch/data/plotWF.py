@@ -61,9 +61,9 @@ def calculateSNR(t, v):
     return peak/RMS
     
 gSystem.Load('libAraEvent.so') #load the simulation event library. You might get an error asking for the eventSim dictionry. To solve that, go to where you compiled AraSim, find that file, and copy it to where you set LD_LIBRARY_PATH.
-gInterpreter.ProcessLine('#include "/users/PAS0654/osu8354/ARA_cvmfs/build/include/FFTtools.h"')
+gInterpreter.ProcessLine('#include "/cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/ARA_cvmfs/build/include/FFTtools.h"')
 
-gSystem.Load("/users/PAS0654/osu8354/ARA_cvmfs/build/lib/libRootFftwWrapper.so")
+gSystem.Load("/cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/ARA_cvmfs/build/lib/libRootFftwWrapper.so")
 
 day = 24
 
@@ -140,7 +140,7 @@ for evNum in range(14300,totalEvents):#loop over events
     fig.text(0.03, 0.5, 'Amplitude [mV]', ha='center', va='center', rotation='vertical', fontsize=20)
     plt.suptitle("Run %s, event %i"%(run, evNum))
     plt.tight_layout(rect=[0.03, 0.03, 1, 0.95])
-    plt.savefig("/users/PAS0654/osu8354/ARA_cvmfs/source/AraRoot/analysis/thesis_work_daily/plots/SpiceCorePolReco/wf_all_run%s_ev%i.png"%(run,evNum))
+    plt.savefig("/cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/ARA_cvmfs/source/AraRoot/analysis/thesis_work_daily/plots/SpiceCorePolReco/wf_all_run%s_ev%i.png"%(run,evNum))
     plt.close('all')
     # sys.exit()
 

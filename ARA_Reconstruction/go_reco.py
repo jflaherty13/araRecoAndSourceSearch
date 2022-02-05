@@ -8,7 +8,7 @@ from ROOT import TChain, gSystem
 
 # import waveform as waveform
 
-gSystem.Load('/users/PAS0654/osu8354/AraSim_debug/AraSim/libAra.so')
+gSystem.Load('/cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/AraSim_debug/AraSim/libAra.so')
 
 file_list = []
 file_list.append("/fs/scratch/PAS0654/jorge/sim_results/noiseOn/AraOut.default_A2_c1_E600.txt.run0.root")
@@ -34,17 +34,17 @@ simSettingsTree.SetBranchAddress("settings", ROOT.AddressOf(settingsPtr))
 simSettingsTree.GetEvent(0)
 
 # other things we need included
-ROOT.gInterpreter.ProcessLine('#include "/users/PAS0654/osu8354/AraSim_debug/AraSim/RaySolver.h"')
+ROOT.gInterpreter.ProcessLine('#include "/cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/AraSim_debug/AraSim/RaySolver.h"')
 raysolver = ROOT.RaySolver()
 
-ROOT.gInterpreter.ProcessLine('#include "/users/PAS0654/osu8354/AraSim_debug/AraSim/signal.hh"')
+ROOT.gInterpreter.ProcessLine('#include "/cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/AraSim_debug/AraSim/signal.hh"')
 signalPtr = ROOT.Signal(settingsPtr)
 signalPtr.SetMedium(0)
 
-ROOT.gInterpreter.ProcessLine('#include "/users/PAS0654/osu8354/AraSim_debug/AraSim/Tools.h"')
+ROOT.gInterpreter.ProcessLine('#include "/cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/AraSim_debug/AraSim/Tools.h"')
 tools = ROOT.Tools()
 
-# ROOT.gInterpreter.ProcessLine('#include "/users/PAS0654/osu8354/AraSim_debug/AraSim/Report.h"')
+# ROOT.gInterpreter.ProcessLine('#include "/cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/AraSim_debug/AraSim/Report.h"')
 
 numEvents = simTree.GetEntries()
 isTrue=False
