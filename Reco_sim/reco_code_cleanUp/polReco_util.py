@@ -508,7 +508,7 @@ def getResponseAraSim(theta, phi, freq, pol):
 
 
     file_list = []
-    file_list.append("/cvmfs/ara.opensciencegrid.org/trunk/centos7/source/AraSim/outputs/AraOut.default_A2_c1_E610_readIn.txt.runAraSim_comparison_input_test_1E19_2.txt.root") #This might need to be a writable directory, so it can't be used with the cvmfs build. - JCF 2/4/2022
+    file_list.append("/cvmfs/ara.opensciencegrid.org/trunk/centos7/source/AraSim/outputs/AraOut.default_A2_c1_E610_readIn.txt.runAraSim_comparison_input_test_1E19_2.txt.root")
 
     simSettingsTree = TChain("AraTree")
     simTree = TChain("AraTree2")
