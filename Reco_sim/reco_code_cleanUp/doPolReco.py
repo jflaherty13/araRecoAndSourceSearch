@@ -38,7 +38,7 @@ gInterpreter.ProcessLine('#include "/cvmfs/ara.opensciencegrid.org/trunk/centos7
 
 gSystem.Load('/cvmfs/ara.opensciencegrid.org/trunk/centos7/source/AraSim/libAra.so') #load the simulation event library. You might get an error asking for the eventSim dictionry. To solve that, go to where you compiled AraSim, find that file, and copy it to where you set LD_LIBRARY_PATH.
 
-simFolder = "/fs/project/PAS0654/ARA_SIM_RECO_PAPER/neutral_current/mc/E2_nomag/"
+simFolder = "/fs/project/PAS0654/ARA_SIM_RECO_PAPER/neutral_current/mc/E2_nomag/"  #This points to an OSC directory.  The ARA_SIM_RECO_PAPER directory is about 238 GB, so I cannot just package it into the Github.  Might have to store it on Cobalt. - JCF 2/5/2022
 filename = simFolder+"AraOut.setup_neutral_current_E2.txt.run%i.root"%(200000+int(sys.argv[1]))
 file_list = []
 file_list.append(filename)

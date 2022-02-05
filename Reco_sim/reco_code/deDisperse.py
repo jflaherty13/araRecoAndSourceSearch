@@ -34,7 +34,7 @@ gSystem.Load('/cvmfs/ara.opensciencegrid.org/trunk/centos7/source/AraSim/libAra.
 # test = ROOT.TFile.Open("/fs/scratch/PAS0654/jorge/sim_results/default/AraOut.default_A2_c1_E610.txt.run9.root")
 
 file_list=[]#Define an empty list
-simFolder = "/fs/project/PAS0654/ARA_SIM_RECO_PAPER/neutral_current/mc/E2_nomag/"
+simFolder = "/fs/project/PAS0654/ARA_SIM_RECO_PAPER/neutral_current/mc/E2_nomag/"  #This points to an OSC directory that is 238 GB, so we cannot just package it into the github.  Might have to store it on Cobalt. - JCF 2/5/2022
 filename = simFolder+"AraOut.setup_neutral_current_E2.txt.run%i.root"%(200000+int(sys.argv[1]))
 file_list = []
 file_list.append(filename)
