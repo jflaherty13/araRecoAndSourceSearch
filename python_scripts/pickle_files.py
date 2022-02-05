@@ -1,5 +1,5 @@
 import sys
-# sys.path.append("/cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/root6_14_build/lib") # go to parent dir
+# sys.path.append("/cvmfs/ara.opensciencegrid.org/trunk/centos7/source/root6_14_build/lib") # go to parent dir
 # sys.path.append("/users/PCON0003/cond0068/.local/lib/python2.7/site-packages")
 import ROOT
 import math

@@ -6,7 +6,7 @@
 #SBATCH --time=03:45:00
 eval 'source /users/PCON0003/cond0068/.bash_profile_pitzer_cvmfs'
 
-cd /cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/ARA_cvmfs/source/AraRoot/analysis/
+cd /cvmfs/ara.opensciencegrid.org/trunk/centos7/source/ARA_cvmfs/source/AraRoot/analysis/
 
 FILES=${SIMDIR}/*.root
 

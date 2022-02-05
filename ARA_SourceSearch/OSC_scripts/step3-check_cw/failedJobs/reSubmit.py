@@ -34,7 +34,7 @@ station = 2
 year = 2016
 print("Year: %i"%year)
 isSim = 0 #data (0) or simulation (1)
-anaFolder = os.path.expanduser('/cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/ARA_cvmfs/source/AraRoot/analysis/ARA_analysis/ARA_SourceSearch/') #Where are the files with the run lists
+anaFolder = os.path.expanduser('/cvmfs/ara.opensciencegrid.org/trunk/centos7/source/ARA_cvmfs/source/AraRoot/analysis/ARA_analysis/ARA_SourceSearch/') #Where are the files with the run lists
 step1_makePairs = anaFolder + "OSC_scripts/step1-make_ped_pairs/"
 outputDir = "/fs/project/PAS0654/ARA_DATA/A23/10pctCalibBugFix/CWID/A%i/%i"%(station, year)
 summaryDir = "/fs/project/PAS0654/ARA_DATA/A23/10pctCalibBugFix/RunSummary/A%i/%i"%(station, year)

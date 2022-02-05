@@ -8,7 +8,7 @@
 #SBATCH --output=run_reco_sim_rad19.log   # Standard output and error log
 eval 'source /users/PCON0003/cond0068/.bash_profile_pitzer_cvmfs'
 
-cd /cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/ARA_cvmfs/source/AraRoot/analysis/
+cd /cvmfs/ara.opensciencegrid.org/trunk/centos7/source/ARA_cvmfs/source/AraRoot/analysis/
 RADIUS=6
 #RADIUS=19
 

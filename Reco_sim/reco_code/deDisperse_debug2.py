@@ -14,20 +14,20 @@ import pyrex
 import warnings
 import itertools
 warnings.filterwarnings("ignore")
-my_path_plots = os.path.abspath("/cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/ARA_cvmfs/source/AraRoot/analysis/thesis_work_daily/plots")
+my_path_plots = os.path.abspath("/cvmfs/ara.opensciencegrid.org/trunk/centos7/source/ARA_cvmfs/source/AraRoot/analysis/thesis_work_daily/plots")
 
 
 
 #add headers from AraSim. Not sure if all of them are needed, and I'm lazy to check that. MAK SURE to change the location of the headers
-gInterpreter.ProcessLine('#include "/cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/AraSim/Position.h"')
-gInterpreter.ProcessLine('#include "/cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/AraSim/Report.h"')
-gInterpreter.ProcessLine('#include "/cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/AraSim/Detector.h"')
-gInterpreter.ProcessLine('#include "/cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/AraSim/Settings.h"')
+gInterpreter.ProcessLine('#include "/cvmfs/ara.opensciencegrid.org/trunk/centos7/source/AraSim/Position.h"')
+gInterpreter.ProcessLine('#include "/cvmfs/ara.opensciencegrid.org/trunk/centos7/source/AraSim/Report.h"')
+gInterpreter.ProcessLine('#include "/cvmfs/ara.opensciencegrid.org/trunk/centos7/source/AraSim/Detector.h"')
+gInterpreter.ProcessLine('#include "/cvmfs/ara.opensciencegrid.org/trunk/centos7/source/AraSim/Settings.h"')
 
-gSystem.Load('/cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/AraSim/libAra.so') #load the simulation event library. You might get an error asking for the eventSim dictionry. To solve that, go to where you compiled AraSim, find that file, and copy it to where you set LD_LIBRARY_PATH.
+gSystem.Load('/cvmfs/ara.opensciencegrid.org/trunk/centos7/source/AraSim/libAra.so') #load the simulation event library. You might get an error asking for the eventSim dictionry. To solve that, go to where you compiled AraSim, find that file, and copy it to where you set LD_LIBRARY_PATH.
 
-Interpol = pd.read_csv("/cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/AraSim/outputs/interp.csv")
-InterpolV = pd.read_csv("/cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/AraSim/outputs/interpV.csv")
+Interpol = pd.read_csv("/cvmfs/ara.opensciencegrid.org/trunk/centos7/source/AraSim/outputs/interp.csv")
+InterpolV = pd.read_csv("/cvmfs/ara.opensciencegrid.org/trunk/centos7/source/AraSim/outputs/interpV.csv")
 
 theta = np.radians(100.04)
 phi = np.radians(262.94)

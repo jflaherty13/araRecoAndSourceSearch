@@ -4,7 +4,7 @@ import csv, subprocess
 import sys
 
 failedRuns = []
-path = "/cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/ARA_cvmfs/source/AraRoot/analysis/ARA_analysis/ARA_SourceSearch/OSC_scripts/step6-save_vals_for_cuts/logs/"
+path = "/cvmfs/ara.opensciencegrid.org/trunk/centos7/source/ARA_cvmfs/source/AraRoot/analysis/ARA_analysis/ARA_SourceSearch/OSC_scripts/step6-save_vals_for_cuts/logs/"
 pathlist = Path(path).glob('**/*.out')
 for path in pathlist:
      # because path is object not string

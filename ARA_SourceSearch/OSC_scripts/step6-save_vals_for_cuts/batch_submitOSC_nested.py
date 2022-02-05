@@ -28,12 +28,12 @@ for config in range(1,2):
             if(count_core==0):
 
                 # print(run)
-                f = open("/cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/ARA_cvmfs/source/AraRoot/analysis/ARA_analysis/ARA_SourceSearch/OSC_scripts/step6-save_vals_for_cuts/tmpScipts/A%i_c%i_tmpSubmit_%i.sh"%(station, config, count), "w+")
+                f = open("/cvmfs/ara.opensciencegrid.org/trunk/centos7/source/ARA_cvmfs/source/AraRoot/analysis/ARA_analysis/ARA_SourceSearch/OSC_scripts/step6-save_vals_for_cuts/tmpScipts/A%i_c%i_tmpSubmit_%i.sh"%(station, config, count), "w+")
                 f.write("#!/bin/bash\n\n")
                 f.write("#SBATCH --mail-type=FAIL\n")
                 f.write("#SBATCH --time=02:30:00\n\n")
                 f.write("eval 'source /users/PCON0003/cond0068/.bash_profile_pitzer_cvmfs'\n")
-                f.write("cd /cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/ARA_cvmfs/source/AraRoot/analysis/\n\n")
+                f.write("cd /cvmfs/ara.opensciencegrid.org/trunk/centos7/source/ARA_cvmfs/source/AraRoot/analysis/\n\n")
                 f.write("date\n\n")
 
             f.write("./v2_save_vals ${ISSIM} ${STATION} ${CONFIG} 225 1 %s %i %i %0.1f %0.1f %s &\n"%(outputDir, V_SNR_BIN, H_SNR_BIN, V_WFRMS_CUT, H_WFRMS_CUT, joinedFileName))

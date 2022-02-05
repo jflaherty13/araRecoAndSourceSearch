@@ -8,10 +8,10 @@ for j in "${arr[@]}"
 do
   for i in $(seq 560 5 610)
   do
-      AraSimDir='/cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/AraSim'
-      SetUpFile='/cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/ARA/AraSim/AraSim_versions/a23_4yr_diffuse_simconfigs/Latten/Latten_'$j'_A2_c1_E'$i'.txt'
-      #SetUpFile='/cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/ARA/AraSim/trunk/setup_'$i'_th_stdnoise.txt'
-      #OutputDir='/cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/ARA/AraSim/trunk/outputs/'
+      AraSimDir='/cvmfs/ara.opensciencegrid.org/trunk/centos7/source/AraSim'
+      SetUpFile='/cvmfs/ara.opensciencegrid.org/trunk/centos7/source/ARA/AraSim/AraSim_versions/a23_4yr_diffuse_simconfigs/Latten/Latten_'$j'_A2_c1_E'$i'.txt'
+      #SetUpFile='/cvmfs/ara.opensciencegrid.org/trunk/centos7/source/ARA/AraSim/trunk/setup_'$i'_th_stdnoise.txt'
+      #OutputDir='/cvmfs/ara.opensciencegrid.org/trunk/centos7/source/ARA/AraSim/trunk/outputs/'
       OutputDir='/fs/scratch/PAS0654/jorge/sim_results/Latten_'$j'/'
       export AraSimDir
       export SetUpFile

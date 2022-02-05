@@ -20,8 +20,8 @@ import pandas as pd
 
 gInterpreter.ProcessLine('#include "FFTtools.h"')
 
-ROOT.gSystem.Load("/cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/ARA_cvmfs/build/lib/libAraEvent.so")#point this to your AraRoot lib
-ROOT.gSystem.Load("/cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/ARA_cvmfs/build/lib/libRootFftwWrapper.so")
+ROOT.gSystem.Load("/cvmfs/ara.opensciencegrid.org/trunk/centos7/source/misc_build/libAraEvent.so")#point this to your AraRoot lib
+ROOT.gSystem.Load("/cvmfs/ara.opensciencegrid.org/trunk/centos7/source/misc_build/libRootFftwWrapper.so")
 
 def load_tof_grid_data(filename, antenna_positions=None):
     with np.load(filename) as f:

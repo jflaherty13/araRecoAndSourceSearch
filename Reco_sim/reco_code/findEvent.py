@@ -47,7 +47,7 @@ def makeInputFile(posnu_x, posnu_y, posnu_z, nnu_x, nnu_y, nnu_z, nuflavorint, n
     nnu = np.array([nnu_x, nnu_y, nnu_z])
     nnu_phi = np.arctan2(nnu[1],nnu[0])%(2*np.pi)
     nnu_theta = np.arccos(nnu[2])
-    filenameIn = '/cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/AraSim/AraSim_input_event%i.txt'%(EvNum)
+    filenameIn = '/cvmfs/ara.opensciencegrid.org/trunk/centos7/source/AraSim/AraSim_input_event%i.txt'%(EvNum)
     with open(filenameIn, 'w') as f:
         print("//VERSION=0.1\n//EVENT_NUM=" + str(1) + 
               "\n//evid nuflavorint nu_nubar pnu currentint posnu_r posnu_theta posnu_phi nnu_theta nnu_phi elast_y", file=f)
@@ -56,18 +56,18 @@ def makeInputFile(posnu_x, posnu_y, posnu_z, nnu_x, nnu_y, nnu_z, nuflavorint, n
         
         
 #add headers from AraSim. Not sure if all of them are needed, and I'm lazy to check that. MAK SURE to change the location of the headers
-gInterpreter.ProcessLine('#include "/cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/AraSim/Position.h"')
-gInterpreter.ProcessLine('#include "/cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/AraSim/Report.h"')
-gInterpreter.ProcessLine('#include "/cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/AraSim/Detector.h"')
-gInterpreter.ProcessLine('#include "/cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/AraSim/Settings.h"')
+gInterpreter.ProcessLine('#include "/cvmfs/ara.opensciencegrid.org/trunk/centos7/source/AraSim/Position.h"')
+gInterpreter.ProcessLine('#include "/cvmfs/ara.opensciencegrid.org/trunk/centos7/source/AraSim/Report.h"')
+gInterpreter.ProcessLine('#include "/cvmfs/ara.opensciencegrid.org/trunk/centos7/source/AraSim/Detector.h"')
+gInterpreter.ProcessLine('#include "/cvmfs/ara.opensciencegrid.org/trunk/centos7/source/AraSim/Settings.h"')
 
-gSystem.Load('/cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/AraSim/libAra.so') #load the simulation event library. You might get an error asking for the eventSim dictionry. To solve that, go to where you compiled AraSim, find that file, and copy it to where you set LD_LIBRARY_PATH.
+gSystem.Load('/cvmfs/ara.opensciencegrid.org/trunk/centos7/source/AraSim/libAra.so') #load the simulation event library. You might get an error asking for the eventSim dictionry. To solve that, go to where you compiled AraSim, find that file, and copy it to where you set LD_LIBRARY_PATH.
 
 file_list=[]#Define an empty list
 # for filename in os.listdir("/fs/scratch/PAS0654/jorge/sim_results/noiseOn"):#Loop over desired directory
 #         if (filename.startswith("AraOut.default_A2_c1_E600.txt.run40")): #extension, .root in this case
 #             file_list.append(os.path.join("/fs/scratch/PAS0654/jorge/sim_results/noiseOn", str(filename))) #add file name to the list
-file_list.append("/cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/AraSim/outputs/AraOut.root")
+file_list.append("/cvmfs/ara.opensciencegrid.org/trunk/centos7/source/AraSim/outputs/AraOut.root")
 
 
 

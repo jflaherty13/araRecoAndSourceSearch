@@ -15,7 +15,7 @@ main(int argc, char** argv)
     // your module from the path where Python's system modules/packages are
     // found.
     PyObject* sysPath = PySys_GetObject("path");
-    PyList_Append(sysPath, PyUnicode_FromString("/cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/ARA_cvmfs/source/AraRoot/analysis/ARA_analysis/ARA_SourceSearch/analysis_code/CPython/"));
+    PyList_Append(sysPath, PyUnicode_FromString("/cvmfs/ara.opensciencegrid.org/trunk/centos7/source/ARA_cvmfs/source/AraRoot/analysis/ARA_analysis/ARA_SourceSearch/analysis_code/CPython/"));
 
     // Load the module
     PyObject *pName = PyUnicode_FromString("returnCenA");

@@ -2,9 +2,9 @@ def isBadrun(runNum, station):
     colname=["run"]
     import pandas as pd
     if(station==2):
-        badRunList=pd.read_csv("/cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/ARA_cvmfs/source/AraRoot/analysis/ARA_analysis/files/badRuns_list_A2.txt",names=colname)
+        badRunList=pd.read_csv("/cvmfs/ara.opensciencegrid.org/trunk/centos7/source/ARA_cvmfs/source/AraRoot/analysis/ARA_analysis/files/badRuns_list_A2.txt",names=colname)
     elif(station==3):
-        badRunList=pd.read_csv("/cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/ARA_cvmfs/source/AraRoot/analysis/ARA_analysis/files/badRuns_list_A3.txt",names=colname)
+        badRunList=pd.read_csv("/cvmfs/ara.opensciencegrid.org/trunk/centos7/source/ARA_cvmfs/source/AraRoot/analysis/ARA_analysis/files/badRuns_list_A3.txt",names=colname)
     return (badRunList["run"]==runNum).any() #True or false
 
 def isUntaggedCalRun(config,runNum):

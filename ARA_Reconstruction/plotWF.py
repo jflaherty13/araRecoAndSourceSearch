@@ -131,7 +131,7 @@ for evNum in range(6456,6457):#loop over events
     fig.text(0.03, 0.5, 'Amplitude [mV]', ha='center', va='center', rotation='vertical', fontsize=20)
     plt.suptitle("A5, Run 004000, event %i,kLatestCalib14to20\_Bug"%evNum)
     plt.tight_layout(rect=[0.03, 0.03, 1, 0.95])
-    plt.savefig("/cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/ARA_cvmfs/source/AraRoot/analysis/thesis_work_daily/plots/SpiceCorePolReco/wf_all_ev%i_forBesson.pdf"%evNum)
+    plt.savefig("/cvmfs/ara.opensciencegrid.org/trunk/centos7/source/ARA_cvmfs/source/AraRoot/analysis/thesis_work_daily/plots/SpiceCorePolReco/wf_all_ev%i_forBesson.pdf"%evNum)
     plt.close('all')
     # tWf1, vWf1 = convertWfToArray(6, usefulEvent)
     # tWf2, vWf2 = convertWfToArray(14, usefulEvent)

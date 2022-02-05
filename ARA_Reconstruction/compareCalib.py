@@ -105,6 +105,6 @@ for evNum in range(5359,5367):#loop over events
     plt.plot(t, v, alpha = 0.5, label = "New calibration")
     # plt.close('all')
     plt.legend()
-    plt.savefig("/cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/ARA_cvmfs/source/AraRoot/analysis/thesis_work_daily/plots/SpiceCorePolReco/wf_comparisonHpol.png", dpi = 200)
+    plt.savefig("/cvmfs/ara.opensciencegrid.org/trunk/centos7/source/ARA_cvmfs/source/AraRoot/analysis/thesis_work_daily/plots/SpiceCorePolReco/wf_comparisonHpol.png", dpi = 200)
     # plt.show()
     break

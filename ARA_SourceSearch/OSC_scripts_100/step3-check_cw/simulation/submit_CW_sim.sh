@@ -8,7 +8,7 @@
 #SBATCH --output=run_filter_sim.log   # Standard output and error log
 eval 'source /users/PCON0003/cond0068/.bash_profile_pitzer_cvmfs'
 
-cd /cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/ARA_cvmfs/source/AraRoot/analysis/
+cd /cvmfs/ara.opensciencegrid.org/trunk/centos7/source/ARA_cvmfs/source/AraRoot/analysis/
 
 FILES=/fs/scratch/PAS0654/jorge/sim_results/CenAFluxFixed/*.root
 for f in $FILES

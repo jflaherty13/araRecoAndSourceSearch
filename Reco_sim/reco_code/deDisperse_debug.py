@@ -24,22 +24,22 @@ warnings.filterwarnings("ignore")
 ntrig=0
 nbad=0
 #add headers from AraSim. Not sure if all of them are needed, and I'm lazy to check that. MAK SURE to change the location of the headers
-gInterpreter.ProcessLine('#include "/cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/AraSim/Position.h"')
-gInterpreter.ProcessLine('#include "/cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/AraSim/Report.h"')
-gInterpreter.ProcessLine('#include "/cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/AraSim/Detector.h"')
-gInterpreter.ProcessLine('#include "/cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/AraSim/Settings.h"')
+gInterpreter.ProcessLine('#include "/cvmfs/ara.opensciencegrid.org/trunk/centos7/source/AraSim/Position.h"')
+gInterpreter.ProcessLine('#include "/cvmfs/ara.opensciencegrid.org/trunk/centos7/source/AraSim/Report.h"')
+gInterpreter.ProcessLine('#include "/cvmfs/ara.opensciencegrid.org/trunk/centos7/source/AraSim/Detector.h"')
+gInterpreter.ProcessLine('#include "/cvmfs/ara.opensciencegrid.org/trunk/centos7/source/AraSim/Settings.h"')
 
-gSystem.Load('/cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/AraSim/libAra.so') #load the simulation event library. You might get an error asking for the eventSim dictionry. To solve that, go to where you compiled AraSim, find that file, and copy it to where you set LD_LIBRARY_PATH.
+gSystem.Load('/cvmfs/ara.opensciencegrid.org/trunk/centos7/source/AraSim/libAra.so') #load the simulation event library. You might get an error asking for the eventSim dictionry. To solve that, go to where you compiled AraSim, find that file, and copy it to where you set LD_LIBRARY_PATH.
 
 
 # test = ROOT.TFile.Open("/fs/scratch/PAS0654/jorge/sim_results/CenA_atzero/AraOut.CenA_fixed_source_seed4.txt.run0.root")#directory where the simulation files are
 # test = ROOT.TFile.Open("/fs/scratch/PAS0654/jorge/sim_results/default/AraOut.default_A2_c1_E610.txt.run9.root")
 
 file_list=[]#Define an empty list
-# for filename in os.listdir("/cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/AraSim/outputs"):#Loop over desired directory
+# for filename in os.listdir("/cvmfs/ara.opensciencegrid.org/trunk/centos7/source/AraSim/outputs"):#Loop over desired directory
 #         if (filename.startswith("AraOut.default_A2_c1_E610_readIn_noise.txt.runAraSim_input_event35936")): #extension, .root in this case
-#             file_list.append(os.path.join("/cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/AraSim/outputs", str(filename))) #add file name to the list
-file_list.append("/cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/AraSim/outputs/AraOut.default_A2_c1_E610_readIn_noise.txt.runAraSim_input_event93324.txt.root")
+#             file_list.append(os.path.join("/cvmfs/ara.opensciencegrid.org/trunk/centos7/source/AraSim/outputs", str(filename))) #add file name to the list
+file_list.append("/cvmfs/ara.opensciencegrid.org/trunk/centos7/source/AraSim/outputs/AraOut.default_A2_c1_E610_readIn_noise.txt.runAraSim_input_event93324.txt.root")
 eventTree = TChain("eventTree") #Define chain and tree that needs to be read. "VTree" in this case.
 SimTree = TChain("AraTree2")
 
@@ -151,7 +151,7 @@ for i in range(0,totalEvents):#loop over events
         plt.title("Digitized")
         plt.grid(which="both")
         plt.tight_layout()
-        plt.savefig("/cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/ARA_cvmfs/source/AraRoot/analysis/thesis_work_daily/plots/Dumpster/wf_debug.png", dpi=100)
+        plt.savefig("/cvmfs/ara.opensciencegrid.org/trunk/centos7/source/ARA_cvmfs/source/AraRoot/analysis/thesis_work_daily/plots/Dumpster/wf_debug.png", dpi=100)
 
         plt.figure()
         for ch in [5,13]:
@@ -173,7 +173,7 @@ for i in range(0,totalEvents):#loop over events
         plt.title("Spectra (Digitized waveform)")
         plt.grid(which="both")
         plt.tight_layout()
-        plt.savefig("/cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/ARA_cvmfs/source/AraRoot/analysis/thesis_work_daily/plots/Dumpster/spectra_debug.png", dpi=100)
+        plt.savefig("/cvmfs/ara.opensciencegrid.org/trunk/centos7/source/ARA_cvmfs/source/AraRoot/analysis/thesis_work_daily/plots/Dumpster/spectra_debug.png", dpi=100)
 
     vertex, corrValue = util.doReco(pyrex_array)
     theta_reco.append(180-vertex[1])
@@ -204,7 +204,7 @@ for i in range(0,totalEvents):#loop over events
         plt.legend()
         plt.grid(which="both")
         plt.tight_layout()
-        plt.savefig("/cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/ARA_cvmfs/source/AraRoot/analysis/thesis_work_daily/plots/Dumpster/wf_debug_before.png", dpi=100)
+        plt.savefig("/cvmfs/ara.opensciencegrid.org/trunk/centos7/source/ARA_cvmfs/source/AraRoot/analysis/thesis_work_daily/plots/Dumpster/wf_debug_before.png", dpi=100)
 
     plt.figure()
     antNum = 0 #antenna number, AraSim numbering
@@ -245,7 +245,7 @@ for i in range(0,totalEvents):#loop over events
         # plt.xlim(0,1000)
         # plt.grid(which="both")
         # plt.tight_layout()
-        # plt.savefig("/cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/ARA_cvmfs/source/AraRoot/analysis/thesis_work_daily/plots/Dumpster/spectra_debug_before.png", dpi=150)
+        # plt.savefig("/cvmfs/ara.opensciencegrid.org/trunk/centos7/source/ARA_cvmfs/source/AraRoot/analysis/thesis_work_daily/plots/Dumpster/spectra_debug_before.png", dpi=150)
         # original_df = pd.DataFrame({"timeH":np.array(t2),"EFieldH":np.array(v2),"timeV":np.array(t),"EFieldV":np.array(v)})
         # original_df.to_pickle("./EFields_AraSim.pkl")
 
@@ -285,7 +285,7 @@ for i in range(0,totalEvents):#loop over events
             # axs[chan].set_ylim(-0.004,0.004)
     plt.tight_layout()
     plt.grid(which="both")
-    plt.savefig("/cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/ARA_cvmfs/source/AraRoot/analysis/thesis_work_daily/plots/Dumpster/wf_all_beforeAntenna.png", dpi=100)
+    plt.savefig("/cvmfs/ara.opensciencegrid.org/trunk/centos7/source/ARA_cvmfs/source/AraRoot/analysis/thesis_work_daily/plots/Dumpster/wf_all_beforeAntenna.png", dpi=100)
 
     # gr = [None]*2
     plt.figure()
@@ -343,7 +343,7 @@ for i in range(0,totalEvents):#loop over events
                 plt.title('Deconvolved')
                 plt.grid(which="both")
                 plt.tight_layout()
-                plt.savefig("/cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/ARA_cvmfs/source/AraRoot/analysis/thesis_work_daily/plots/Dumpster/wf_debug_DeConv.png", dpi=150)
+                plt.savefig("/cvmfs/ara.opensciencegrid.org/trunk/centos7/source/ARA_cvmfs/source/AraRoot/analysis/thesis_work_daily/plots/Dumpster/wf_debug_DeConv.png", dpi=150)
 
     original_df = pd.DataFrame({"time":np.array(t),"traceH":traceH,"traceV":traceV})
     original_df.to_pickle("./Traces.pkl")
@@ -363,7 +363,7 @@ for i in range(0,totalEvents):#loop over events
     plt.ylim(10,1E5)
     plt.grid(which="both")
     plt.tight_layout()
-    plt.savefig("/cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/ARA_cvmfs/source/AraRoot/analysis/thesis_work_daily/plots/Dumpster/wf_debug_DeConv_spectrum.png", dpi=100)
+    plt.savefig("/cvmfs/ara.opensciencegrid.org/trunk/centos7/source/ARA_cvmfs/source/AraRoot/analysis/thesis_work_daily/plots/Dumpster/wf_debug_DeConv_spectrum.png", dpi=100)
 
     if(plotting == True):
         gr = [None]*16
@@ -381,7 +381,7 @@ for i in range(0,totalEvents):#loop over events
             plt.grid(which="both")
             axs[ch].set_ylim(-500,500)
         plt.tight_layout()
-        plt.savefig("/cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/ARA_cvmfs/source/AraRoot/analysis/thesis_work_daily/plots/Dumpster/wf_all.png", dpi=100)
+        plt.savefig("/cvmfs/ara.opensciencegrid.org/trunk/centos7/source/ARA_cvmfs/source/AraRoot/analysis/thesis_work_daily/plots/Dumpster/wf_all.png", dpi=100)
 
     # angle_stokes.append(util.PolAngleStokes(maxV,maxH))
     # angle_ratio.append(util.PolRatio(maxH, maxV))
@@ -448,7 +448,7 @@ for i in range(0,totalEvents):#loop over events
         plt.legend()
         plt.grid(which="both")
         plt.tight_layout()
-        plt.savefig("/cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/ARA_cvmfs/source/AraRoot/analysis/thesis_work_daily/plots/Dumpster/wf_vmimic.png", dpi=100)
+        plt.savefig("/cvmfs/ara.opensciencegrid.org/trunk/centos7/source/ARA_cvmfs/source/AraRoot/analysis/thesis_work_daily/plots/Dumpster/wf_vmimic.png", dpi=100)
     # # if(abs((util.PolRatio(maxH, maxV)-np.degrees(np.arccos(abs(polVec_z_)))))>15 and rmsV_>50 and rmsV_<1400 and rmsH_<1400 and rmsH_>50):
     # if(rmsV_>50 and rmsV_<1400 and rmsH_<1400 and rmsH_>50 and abs(thetaPol_reco-thetaPol_true)>8):
         # print(thetaPol_reco-thetaPol_true)

@@ -6,7 +6,7 @@
 
 eval 'source /users/PCON0003/cond0068/.bash_profile_pitzer_cvmfs'
 
-cd /cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/ARA_cvmfs/source/AraRoot/analysis/
+cd /cvmfs/ara.opensciencegrid.org/trunk/centos7/source/ARA_cvmfs/source/AraRoot/analysis/
 
 ./v2_analysis_reco ${ISSIM} ${STATION} ${YEAR} 6 ${FILTERDIR} ${OUTDIR} ${DATA} &
 ./v2_analysis_reco ${ISSIM} ${STATION} ${YEAR} 19 ${FILTERDIR} ${OUTDIR} ${DATA} &

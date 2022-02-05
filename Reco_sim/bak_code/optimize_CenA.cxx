@@ -78,12 +78,12 @@ int main(int argc, char **argv)
 	// double intercept_scan[6] = {23, 22.5, 22, 21.5, 21, 20.5};
 	double intercept_scan[6] = {20, 19.5, 19, 18.5, 18, 17.5};
 	// double intercept_scan[6] = {19, 18.9, 18.8, 18.7, 18.6, 18.5};
-	// sprintf(filename, "/cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/ARA_cvmfs/source/AraRoot/analysis/files/source_optimization/bkg_random_SNR_scan_config%i.csv", config);
+	// sprintf(filename, "/cvmfs/ara.opensciencegrid.org/trunk/centos7/source/ARA_cvmfs/source/AraRoot/analysis/files/source_optimization/bkg_random_SNR_scan_config%i.csv", config);
 	// FILE *fout = fopen(filename, "a+");//open file
 	// fprintf(fout, "phi,theta,bkg\n");
 	char fileName[250];
 	int seed2 =  seed;
-	sprintf(fileName, "/cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/ARA_cvmfs/source/AraRoot/analysis/files/source_optimization/c%i/bkg_random_SNR_scan_config%i_seed%i.root", config,config,seed2);
+	sprintf(fileName, "/cvmfs/ara.opensciencegrid.org/trunk/centos7/source/ARA_cvmfs/source/AraRoot/analysis/files/source_optimization/c%i/bkg_random_SNR_scan_config%i_seed%i.root", config,config,seed2);
 	printf("Created file at %s\n", fileName);
 	TFile *hfile = new TFile(fileName,"RECREATE","");
 	char treeName[50];

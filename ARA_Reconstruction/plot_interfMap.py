@@ -20,7 +20,7 @@ import pandas as pd
 
 import seaborn as sns
 import matplotlib as mpl
-my_path_plots = os.path.abspath("/cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/ARA_cvmfs/source/AraRoot/analysis/thesis_work_daily/plots/")
+my_path_plots = os.path.abspath("/cvmfs/ara.opensciencegrid.org/trunk/centos7/source/ARA_cvmfs/source/AraRoot/analysis/thesis_work_daily/plots/")
 
 
 # mpl.use('agg') 
@@ -43,9 +43,9 @@ mpl.rc('axes', titlesize=20)
 
 current_palette = sns.color_palette('colorblind', 10)
 
-gInterpreter.ProcessLine('#include "/cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/ARA_cvmfs/build/include/FFTtools.h"')
+gInterpreter.ProcessLine('#include "/cvmfs/ara.opensciencegrid.org/trunk/centos7/source/ARA_cvmfs/build/include/FFTtools.h"')
 gSystem.Load('libAraEvent.so') #load the simulation event library. You might get an error asking for the eventSim dictionry. To solve that, go to where you compiled AraSim, find that file, and copy it to where you set LD_LIBRARY_PATH.
-gSystem.Load("/cvmfs/ara.opensciencegrid.org/trunk/centos7/source4/ARA_cvmfs/build/lib/libRootFftwWrapper.so")
+gSystem.Load("/cvmfs/ara.opensciencegrid.org/trunk/centos7/source/misc_build/libRootFftwWrapper.so")
 
 def load_tof_grid_data(filename, antenna_positions=None):
     with np.load(filename) as f:
