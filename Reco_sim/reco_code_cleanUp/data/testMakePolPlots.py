@@ -115,4 +115,4 @@ sns.histplot(pol_new.deltaPsi, bins = 200, hist_kws={'weights': pol_new.weights}
 # plt.hist(np.array(psi_reco)-np.array(psi_true), bins = 100)
 plt.xlabel('$\Delta \Psi$ [deg.]')
 plt.legend()
-
+plt.savefig("test.png")
